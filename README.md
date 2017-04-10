@@ -6,7 +6,8 @@ In this repository you can find some example source code for Social Time Project
 - Look at the `TimeSlotFactory` class to know how to create a unique set of `TimeSlot` flyweight objects.
 - Look at the `EventController` class to find how to find candidate `TimeSlot` objects from the available time slots of each invitee.
 - You can use the same logic to find the undecided time slots objects for each invitee.
-- You can infer the number of domain classes required to implement this application
+- You can infer the number of domain classes required to implement this application.
+- Observer pattern is used between `Event` and `User`, where users that are invitees are observers and Event object is the subject for observers. Look at the `EventObserver` interface.
 
 ** This is no way complete. It is just meant to provide you guidelines for solving this problem. Be aware of plagiarism. **
 
